@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+input{
+  width:300px;
+  height:30px;
+  border-radius: 10px;
+  background-color: rgb(235, 225, 225);
+  margin-top: 20px;
+}
+.mapping{
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+  gap:30px
+  
+  /* grid-template-rows: repeat(3,1fr); */
+}
+.heading{
+  background-color: black;
+  font-size:large;
+  font-weight: bold;
+  height:30px;
+  padding:10px;
+  color:white
+}
+.deltecateg{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapping-data{
+  border-radius: 20px;
+  padding:20px;
+  margin: 10px;
+  text-align: center;
+  font-style: italic;
+  background-color: rgb(235, 225, 225);;
+}
+body{
+  background-color: rgb(113, 166, 166);
+}
+@media  (max-width:800px){
+  .mapping{
+    display: grid;
+  
+    grid-template-columns: repeat(3,1fr);
+    gap:30px
+    
+    /* grid-template-rows: repeat(3,1fr); */
+  }
+}
+@media (max-width: 400px){
+  .mapping{
+    display: grid;
+  
+    grid-template-columns: repeat(2,1fr);
+    gap:30px
+    
+    /* grid-template-rows: repeat(3,1fr); */
+  }
+}
+  
+

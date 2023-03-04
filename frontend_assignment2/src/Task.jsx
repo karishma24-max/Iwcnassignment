@@ -19,16 +19,16 @@ setTaskdata({...taskdata,title,date})
     function handlesubmit(e){
         console.log("taskdata")
         e.preventDefault()
-axios.post("http://localhost:8080/user",taskdata).then(res=>alert("Congratulations,Your task has been updated")).catch(e=>alert("Please enter your task first"))
+axios.post("https://busy-tan-coral-tutu.cyclic.app/user",taskdata).then(res=>alert("Congratulations,Your task has been updated")).catch(e=>alert("Please enter your task first"))
   
 }
 function handledelete(id)
 {
 console.log(id)
-    axios.delete(`http://localhost:8080/delete/${id}`).then(res=>alert("task sucessfully deleted")).catch(e=>alert("task can not deleted"))
+    axios.delete(`https://busy-tan-coral-tutu.cyclic.app/delete/${id}`).then(res=>alert("task sucessfully deleted")).catch(e=>alert("task can not deleted"))
 }
     useEffect(()=>{
-        axios.get("http://localhost:8080/user").then(res=>setMapdata(res.data)).catch(e=>console.log(e))
+        axios.get("https://busy-tan-coral-tutu.cyclic.app/user").then(res=>setMapdata(res.data)).catch(e=>console.log(e))
     },[mapdata])
   return (
     <div>
